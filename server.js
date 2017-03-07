@@ -29,7 +29,7 @@ function hash(input,salt){
     return hashed.toString('hex');
 }
 app.get('/hash/:input/', function (req, res){
-var hashedString=hash(req.params.input,'his-is-rajesh');
+var hashedString=hash(req.params.input,'his-is-rajes');
 res.send(hashedString);
     
 });
