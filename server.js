@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var crypto=require('crypto');
+var crypto = require('crypto');
 
 var app = express();
 app.use(morgan('combined'));
@@ -29,7 +29,7 @@ function hash(input,salt){
     return hashed.toString('hex');
 }
 app.get('/hash/:input/', function (req, res){
-var hashedString=hash(req.params.input,'this-is-rajesh');
+var hashedString=hash(req.params.input,'this-is-rajes');
 res.send(hashedString);
     
 });
